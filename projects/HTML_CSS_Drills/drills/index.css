@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.blue {
+    background-color: #673AB7;
+}
+
+.yellow { 
+    background-color: #FFEB3B;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.box {
+    background: #673AB7;
+    height: 200px;
+    width: 200px;
+}
+
+.parent{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

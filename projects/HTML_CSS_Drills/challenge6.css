@@ -1,0 +1,30 @@
+
+#div1{
+    margin-top: 300px;
+    margin-left: 550px;
+    height: 300px;
+    width: 800px;
+    background-color: rgb(49, 47, 47);
+    color:white;
+    
+}
+
+#div2{
+    margin-top: 80px;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    color:white;
+    
+}
+
+#div3{
+    margin-top: -298px;
+    margin-left: 500px;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    color:white;
+    float:right;   
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script rel="javascript" src="/assets/js/main.js"></script>
+    <title>Github Repository</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.svg" alt="" height="25px" width="25px">
+        </a>
+    </nav>
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div id="userParent" class="col-md-4 col-sm-6 col-xs-12">
+                
+            </div>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="input-group mb-2">
+                    <input id="user" type="text" class="form-control" placeholder="Git Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button onclick="getUserDetails()" class="btn btn-success">Get Repository</button>
+                    </div>
+                </div>
+                <span id="errorMsg"></span>
+                <div id="repoWrapper">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="overview" data-toggle="tab"  role="tab" aria-controls="home" aria-selected="true">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="repositories" data-toggle="tab"  role="tab" aria-controls="profile" aria-selected="false">Repositories <span id="repoSpan" class="badge badge-pill badge-secondary"></span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="followers" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Followers <span id="followersSpan" class="badge badge-pill badge-secondary"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="following" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Following <span id="followingSpan" class="badge badge-pill badge-secondary"></span></a>
+                          </li>
+                      </ul>
+                    <div id="repoParent" class="row">
+                        <h6 id="repositories"><span>Popular repositories</span><span>Customize your pins</span></h6>
+                        
+                    </div>                   
+                </div>
+                <div id="topicWrapper">
+                    <p id="ownerRepo"></p>
+                    <div class="input-group mb-2">
+                        <input id="topic" type="text" class="form-control" placeholder="Enter Topic">
+                        <div class="input-group-append">
+                            <button id="btnTopic" class="btn btn-success">Add Topic</button>
+                        </div>
+                    </div>
+                    <span id="topicErrorMsg"></span>
+                    <div id="topicParent">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

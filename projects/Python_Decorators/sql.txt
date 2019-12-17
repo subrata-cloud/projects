@@ -1,0 +1,7 @@
+1. SELECT CustomerName ,count(orderID) as orders from Customers c inner join Orders o on c.CustomerID=o.CustomerID group by CustomerName;
+
+2. SELECT sum(count(orderID))/sum(count(CustomerName)) as average from Customers c inner join Orders o on c.CustomerID=o.CustomerID group by CustomerName;
+
+3. SELECT o.OrderID, c.CustomerName,  s.ShipperName, o.OrderDate FROM Shippers s inner join Orders o on s.ShipperID=o.ShipperID inner join Customers c on o.CustomerID=c.CustomerID where o.OrderDate like '%1997%';
+
+4. SELECT s.SupplierName, p.Price*o.Quantity as revenue from Suppliers s inner join Products p on s.SupplierID=p.SupplierID inner join OrderDetails o on o.ProductID=p.ProductID group by s.SupplierName;

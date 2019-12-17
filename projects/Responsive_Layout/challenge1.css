@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header,footer{
+    position: fixed;
+    background-color: darkgrey;
+    height: 10%;
+    width: 100%;
+}
+
+header{
+    top: 0;
+}
+
+footer{
+    bottom: 0;
+}
+
+section{
+    position: fixed;
+    height: 76%;
+    width: 100%;
+    top:12%;    
+}
+
+@media only screen and (max-width:600px){
+    .a{
+        height: 33.33%;
+        width: 100%;
+        background-color: red;
+    }
+    
+    .b{
+        height: 33.33%;
+        width: 100%;
+        background-color: orange;
+    }
+    
+    .c{
+        height: 33.33%;
+        width: 100%;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:768px){
+    .a{
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        background-color: red;
+        overflow: hidden;
+    }
+    
+    .b{
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        background-color: orange;
+        top:50%;
+        overflow: hidden;
+    }
+    
+    .c{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        background-color: yellow;
+        left: 50%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1400px){
+    .a{
+        position: absolute;
+        height: 50%;
+        width: 75%;
+        background-color: red;
+        overflow: hidden;
+    }
+    
+    .b{
+        position: absolute;
+        height: 50%;
+        width: 75%;
+        background-color: orange;
+        top:50%;
+        overflow: hidden;
+    }
+    
+    .c{
+        position: absolute;
+        height: 100%;
+        width: 25%;
+        background-color: yellow;
+        left: 75%;
+        overflow: hidden;
+    }
+}
+
+
+

@@ -1,0 +1,15 @@
+div{
+    height: 100px;
+    width: 100px;
+    color:white;
+}
+
+#div1{
+    background-color: black;
+}
+
+#div2{    
+    background-color: rgb(46, 44, 44);
+    margin-top: 35px;
+    margin-left: 50px;   
+}

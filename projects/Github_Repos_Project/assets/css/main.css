@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#repoWrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#repoParent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#repoParent #repositories{
+    width: 98%;
+    margin-top: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+#repoParent #repositories span:first-child{
+    color:rgb(173, 167, 167);
+    font-size: medium;
+    float: left;
+    margin-top: 20px;
+}
+
+#repoParent #repositories span:last-child{
+    color:rgb(173, 167, 167);
+    font-size: small;
+    float: right;
+    margin-top: 20px;
+}
+
+#repoParent div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    width:47%;
+    height:100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border:1px solid rgb(214, 213, 211);
+    border-radius: 5px;
+       
+}
